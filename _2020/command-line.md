@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "Command-line Environment"
-date: 2019-01-21
+thumbnail: /static/assets/thumbnails/2020/lec5.png
+date: 2020-01-21
 ready: true
 video:
   aspect: 56.25
@@ -71,7 +72,7 @@ I got a SIGINT, but I am not stopping
 예를 들어 `SIGSTOP`은 프로세스를 일시 중지시킵니다. 
 터미널에서 `Ctrl-Z`를 입력하면 shell이 Terminal Stop(터미널 버전 `SIGSTOP`)을 줄인 `SIGTSTP` 신호를 보냅니다.
 
-그 다음 각각 [`fg`](https://www.man7.org/linux/man-pages/man1/fg.1p.html) 또는 [`bg`](http://man7.org/linux/man-pages/man1/bg.1p.html) 를 사용하여 포어그라운드 또는 백그라운드에서 일시 중지된 작업을 계속할 수 있습니다.
+그 다음 각각 [`fg`](https://www.man7.org/linux/man-pages/man1/fg.1p.html) 또는 [`bg`](https://man7.org/linux/man-pages/man1/bg.1p.html) 를 사용하여 포어그라운드 또는 백그라운드에서 일시 중지된 작업을 계속할 수 있습니다.
 
 [`jobs`](https://www.man7.org/linux/man-pages/man1/jobs.1p.html) 명령어에는 현재 터미널 세션과 관련된 미완료 작업 목록을 보여줍니다. 
 목록의 pid([`pgrep`](https://www.man7.org/linux/man-pages/man1/pgrep.1.html) 사용)를 이용하여 해당 작업을 참조할 수 있습니다.
@@ -180,7 +181,7 @@ $ jobs
     + `<C-b> <space>` 창 배열을 순환
 
 추가적인 자료는 [`여기`](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)에 `tmux`에 대한 간단한 튜토리얼이 있고, 
-[여기](http://linuxcommand.org/lc3_adv_termmux.php)에는 원래의 `screen` 명령을 다루는 보다 자세한 설명이 있습니다. 
+[여기](https://linuxcommand.org/lc3_adv_termmux.php)에는 원래의 `screen` 명령을 다루는 보다 자세한 설명이 있습니다. 
 대부분의 UNIX 시스템에 설치되므로 [`screen`](https://www.man7.org/linux/man-pages/man1/screen.1.html)을 숙지하는 것이 좋을 것입니다.
 
 # 별칭
@@ -238,7 +239,7 @@ alias ll
 많은 프로그램은 _dotfiles_ 로 알려진 일반 텍스트 파일을 사용하여 구성됩니다.
 (파일 이름이 `.`, `~/.vimrc` 예들로 시작하므로 기본적으로 디렉토리 목록에 숨겨져 있기 때문입니다.)
 
-쉘은 이러한 파일로 구성된 프로그램의 한 예입니다. 시작시 쉘은 구성을 로드하기 위해 많은 파일을 읽습니다. 쉘에 따라 로그인을 시작하든 쌍방향의 작업을 시작하든 둘 중 어떤 것을 시작하든 전체 프로세스는 상당히 복잡할 수 있습니다. 주제에 대한 자료는 [`여기`](https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html)에 있습니다. 
+쉘은 이러한 파일로 구성된 프로그램의 한 예입니다. 시작시 쉘은 구성을 로드하기 위해 많은 파일을 읽습니다. 쉘에 따라 로그인을 시작하든 쌍방향의 작업을 시작하든 둘 중 어떤 것을 시작하든 전체 프로세스는 상당히 복잡할 수 있습니다. 주제에 대한 자료는 [`여기`](https://web.archive.org/web/20260329133158/https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html)에 있습니다. 
 
 `bash` 의 경우, `.bashrc` 혹은 `.bash_profile`의 편집은 대부분의 시스템에서 작동합니다. 여기에 방금 설명한 별칭이나 'PATH' 환경 변수 수정과 같이 시작 시 실행할 명령을 포함할 수 있습니다. 실제로 많은 프로그램에서는 binaries를 찾을 수 있도록 쉘 구성 파일에 `export PATH="$PATH:/path/to/program/bin"`과 같은 행을 포함하도록 요청할 것입니다.
 
@@ -364,10 +365,10 @@ ssh를 통해 파일을 복사하는 방법에는 여러 가지가 있습니다.
 이것을 _포트 포워딩(port forwarding)_ 이라고 하며 로컬 포트 포워딩(Local Port Forwarding)과 원격 포트 포워딩(Remote Port Forwarding)의 두 가지 형태로 제공됩니다. (자세한 내용은 사진을 참조해주십시오. 저작권은 [StackOverflow 게시물](https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot)에 있습니다.) 
 
 **로컬 포트 포워딩(Local Port Forwarding)**
-![Local Port Forwarding](https://i.stack.imgur.com/a28N8.png  "Local Port Forwarding")
+![Local Port Forwarding](/static/media/images/local-port-forwarding.png "Local Port Forwarding")
 
 **원격 포트 포워딩(Remote Port Forwarding)**
-![Remote Port Forwarding](https://i.stack.imgur.com/4iK3b.png  "Remote Port Forwarding")
+![Remote Port Forwarding](/static/media/images/remote-port-forwarding.png "Remote Port Forwarding")
 
 가장 일반적인 시나리오는 로컬 포트 포워딩(local port forwarding)으로, 원격 장치의 서비스가 포트에서 수신 대기하고 로컬 장치의 포트를 원격 포트로 연결하는 경우입니다.
 예를 들어 '8888' 포트를 수신하는 원격 서버에서 주피터 노트북을 실행하면, 이를 로컬 포트 `9999`로 전달하기 위해 `ssh -L 9999:localhost:8888 foobar@remote_server`를 수행한 다음 로컬 장치에서 `locahost : 9999`로 이동합니다.
@@ -448,7 +449,7 @@ Host *.mit.edu
 
 ## 작업 제어
 
-1. 지금까지 공부한 바에 따르면, 우리는 명령어 `ps aux | grep` 로 PID를 조회하여 작업을 종료할 수 있습니다. 하지만 이것보다 더 나은 방법이 있습니다. 터미널에서 `sleep 10000`를  실행하고, `Ctrl-Z`로 그것을 백그라운드 실행하세요. 그리고 `bg`를 통해 이 작업을 계속합니다. 이제 [`pgrep`](https://www.man7.org/linux/man-pages/man1/pgrep.1.html)을 사용해 pid를 찾은 다움 [`pkill`](http://man7.org/linux/man-pages/man1/pgrep.1.html)을 실행하면 pid를 직접 타이핑하지 않고 작업을 종료시킬 수 있습니다. (힌트: `-af` 플래그를 사용하세요).
+1. 지금까지 공부한 바에 따르면, 우리는 명령어 `ps aux | grep` 로 PID를 조회하여 작업을 종료할 수 있습니다. 하지만 이것보다 더 나은 방법이 있습니다. 터미널에서 `sleep 10000`를  실행하고, `Ctrl-Z`로 그것을 백그라운드 실행하세요. 그리고 `bg`를 통해 이 작업을 계속합니다. 이제 [`pgrep`](https://www.man7.org/linux/man-pages/man1/pgrep.1.html)을 사용해 pid를 찾은 다움 [`pkill`](https://man7.org/linux/man-pages/man1/pgrep.1.html)을 실행하면 pid를 직접 타이핑하지 않고 작업을 종료시킬 수 있습니다. (힌트: `-af` 플래그를 사용하세요).
 
 2. 여러분이 다른 프로세스가 종료되기를 기다려 새 프로세스를 시작하려고 한다고 합시다, 이것을 어떻게 할 수 있을까요? 이 실습에서 프로세스 제한은 항상 `sleep 60 &`로 합니다.
 이것을 가능케 하는 또 다른 방법은 [`wait`](https://www.man7.org/linux/man-pages/man1/wait.1p.html) 명령어를 사용하는 것입니다. sleep 명령어를 실행한 뒤 백그라운드 작업이 끝날 때까지 기다려 `ls`가 실행되도록 하세요.

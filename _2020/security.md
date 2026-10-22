@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "Security and Cryptography"
-date: 2019-01-28
+thumbnail: /static/assets/thumbnails/2020/lec9.png
+date: 2020-01-28
 ready: true
 video:
   aspect: 56.25
@@ -54,7 +55,7 @@ f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0
 - 약한 충돌 저항성(Target collision resistant) : `m_1`이 주어졌을 때, `hash(m_1) = hash(m_2)`를 만족하는 `m_2`를 찾기 어려움
 - 강한 충돌 저항성(Collision resistant) : `hash(m_1) = hash(m_2)`를 만족하는 `m_1`과 `m_2`를 찾기 어려움(약한 충돌 저항성보다 강한 속성)
 
-참고 : 특정 목적으로 사용할 수도 있지만, SHA-1은 [더 이상](https://shattered.io/) 안전한 암호화를 위한 Hash 함수로 취급하지 않습니다. [lifetimes of cryptographic hash functions](https://valerieaurora.org/hash.html)가 아마 흥미로울 것 입니다. 그러나, 특정 Hash 함수를 추천하는 것은 이 강의의 범위를 벗어납니다. 만약 이 글을 읽는 독자가 이러한 문제를 가지고 있다면, 보안/암호학에 대한 정규 교육이 필요합니다.
+참고 : 특정 목적으로 사용할 수도 있지만, SHA-1은 [더 이상](https://web.archive.org/web/20260207211148/https://shattered.io/) 안전한 암호화를 위한 Hash 함수로 취급하지 않습니다. [lifetimes of cryptographic hash functions](https://valerieaurora.org/hash.html)가 아마 흥미로울 것 입니다. 그러나, 특정 Hash 함수를 추천하는 것은 이 강의의 범위를 벗어납니다. 만약 이 글을 읽는 독자가 이러한 문제를 가지고 있다면, 보안/암호학에 대한 정규 교육이 필요합니다.
 
 ## 어플리케이션(Applications)
 

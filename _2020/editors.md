@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "Editors (Vim)"
-date: 2019-01-15
+thumbnail: /static/assets/thumbnails/2020/lec3.png
+date: 2020-01-15
 ready: true
 video:
   aspect: 56.25
@@ -209,7 +210,7 @@ Vim은 Vimscript 명령을 포함하는 `~/.vimrc` 일반-텍스트 구성 파�
 
 Vim은 강력한 커스터마이징 기능을 제공하기 때문에, 커스터마이징 옵션을 찾아보는 시간은 그 자체로 유익할 것입니다. 여러분은 다른 사람들이 깃허브에 올려놓은 닷파일(dotfile)을 살펴보며 영감을 얻을 수도 있을 것입니다. 예를 들어, 해당 강의의 교사의 Vim 구성은 다음과 같습니다.
 ([Anish](https://github.com/anishathalye/dotfiles/blob/master/vimrc),
-[Jon](https://github.com/jonhoo/configs/blob/master/editor/.config/nvim/init.vim) (uses [neovim](https://neovim.io/)),
+[Jon](https://github.com/jonhoo/configs/blob/master/editor/.config/nvim/init.lua) (uses [neovim](https://neovim.io/)),
 [Jose](https://github.com/JJGO/dotfiles/blob/master/vim/.vimrc))
 이 주제에 대한 좋은 블로그 게시물들도 많이 있습니다. 하지만 다른 사람의 전체 구성을 복사하여 붙여넣지 말고, 읽고 이해한 후 필요한 내용을 가져가시길 바랍니다.
 
@@ -250,7 +251,7 @@ set editing-mode vi
 
 ## 그 밖의 것들
 
-웹 [브라우저](http://vim.wikia.com/wiki/Vim_key_bindings_for_web_browsers)를 위한 Vim 키바인딩 익스텐션도 있습니다. [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)은 유명한 크롬 전용 익스텐션이고 [Tridactyl](https://github.com/tridactyl/tridactyl)은 파이어폭스 전용 익스텐션입니다. 여러분은 [Jupyter notebooks](https://github.com/lambdalisue/jupyter-vim-binding)의 Vim 바인딩을 확인할 수도 있습니다.
+웹 [브라우저](https://vim.fandom.com/wiki/Vim_key_bindings_for_web_browsers)를 위한 Vim 키바인딩 익스텐션도 있습니다. [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)은 유명한 크롬 전용 익스텐션이고 [Tridactyl](https://github.com/tridactyl/tridactyl)은 파이어폭스 전용 익스텐션입니다. 여러분은 [Jupyter notebooks](https://github.com/lambdalisue/jupyter-vim-binding)의 Vim 바인딩을 확인할 수도 있습니다.
 
 # Vim 심화
 
@@ -258,7 +259,7 @@ set editing-mode vi
 
 ## 검색과 변환
 
-`:s` (substitute, 대치) 명령어 ([documentation](http://vim.wikia.com/wiki/Search_and_replace)).
+`:s` (substitute, 대치) 명령어 ([documentation](https://vim.fandom.com/wiki/Search_and_replace)).
 
 - `%s/foo/bar/g`
     - 파일 내부에서 모든 foo를 bar로 대체합니다
@@ -308,12 +309,12 @@ set editing-mode vi
 
 - `vimtutor`는 Vim과 함께 설치되는 튜토리얼입니다. 즉, 만약 Vim이 설치되었다면, 여러분은 쉘에서 `vimtutor`를 실행할 수 있어야 합니다
 - [Vim Adventures](https://vim-adventures.com/)는 Vim을 배우기 위한 게임입니다
-- [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+- [Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 - [Vim Advent Calendar](https://vimways.org/2019/)에는 다양한 Vim 팁들이 있습니다
-- [Vim Golf](http://www.vimgolf.com/) 는 [code golf](https://en.wikipedia.org/wiki/Code_golf)의 일종이지만, 프로그래밍 언어가 Vim의 UI로 되어있습니다
+- [Vim Golf](https://www.vimgolf.com/) 는 [code golf](https://en.wikipedia.org/wiki/Code_golf)의 일종이지만, 프로그래밍 언어가 Vim의 UI로 되어있습니다
 - [Vi/Vim Stack Exchange](https://vi.stackexchange.com/)
 - [Vim Screencasts](http://vimcasts.org/)
-- [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition) (서적)
+- [Practical Vim](https://pragprog.com/titles/dnvim2/) (서적)
 
 # 연습문제
 
