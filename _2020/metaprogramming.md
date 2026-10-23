@@ -2,7 +2,8 @@
 layout: lecture
 title: "Metaprogramming"
 details: build systems, dependency management, testing, CI
-date: 2019-01-27
+thumbnail: /static/assets/thumbnails/2020/lec8.png
+date: 2020-01-27
 ready: true
 video:
     aspect: 56.25
@@ -211,5 +212,5 @@ CI 시스템의 예시로서, 수업 웹사이트가 깃허브 페이지스(GitH
    system](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)에서 의존성들에 대한 버전 요구사항들을 명시하는 다양한 방법들을 살펴보세요. 대부분의 패키지 레포지토리가 비슷한 문법을 지원합니다. 각각의 방법에 대해서 그 특정한 종류의 요구사항이 말이 되는 활용 사례를 제시해 보세요.
 3. 깃(Git)은 그 자체로 단순한 CI 시스템으로서 기능할 수 있습니다. 어떤 깃 레포지토리(git repository)에든 있는 `.git/hooks` 안에서, 특정 행위가 일어날 때 스크립트(script)로서 실행되는 (현재 비활성인) 파일들을 발견할 수 있을 것입니다. `make paper.pdf`를 실행시키고 `make` 명령어가 실패하면 커밋을 거부하는 [프리커밋 훅(`pre-commit` hook)](https://git-scm.com/book/ko/v2/Git맞춤-Git-Hooks)을 작성해보세요.
    이러면 빌드가 안 되는 버전의 paper를 어떤 커밋도 가지고 있지 않도록 방지해줄 것입니다.
-4. [깃허브 페이지스(GitHub Pages)](https://help.github.com/en/actions/automating-your-workflow-with-github-actions)를 사용해서 자동으로 게재되는 단순한 페이지를 하나 만들어 보세요. 레포지토리에 [깃허브 액션(GitHub Action)](https://github.com/features/actions)을 추가해서 레포지토리에 있는 모든 셸(shell) 파일들에 대해 `shellcheck`을 실행해보세요.(여기에 [그 방법 중 하나](https://github.com/marketplace/actions/shellcheck)가 있습니다.) 잘 작동하는 지 한 번 확인해보세요!
-5. [자신만의 깃허브 액션(GitHub Action)을 빌드](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions)해서 레포지토리에 있는 모든 `.md` 파일들에 대해서 [`proselint`](http://proselint.com/) 또는 [`write-good`](https://github.com/btford/write-good)을 실행해보세요. 그걸 여러분의 레포지토리에서 활성화시키고, 안에 오타가 포함된 풀 리퀘스트(pull request; PR)를 보내서 잘 작동하는 지 확인해 보세요.
+4. [깃허브 페이지스(GitHub Pages)](https://pages.github.com/)를 사용해서 자동으로 게재되는 단순한 페이지를 하나 만들어 보세요. 레포지토리에 [깃허브 액션(GitHub Action)](https://github.com/features/actions)을 추가해서 레포지토리에 있는 모든 셸(shell) 파일들에 대해 `shellcheck`을 실행해보세요.(여기에 [그 방법 중 하나](https://github.com/marketplace/actions/shellcheck)가 있습니다.) 잘 작동하는 지 한 번 확인해보세요!
+5. [자신만의 깃허브 액션(GitHub Action)을 빌드](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions)해서 레포지토리에 있는 모든 `.md` 파일들에 대해서 [`proselint`](https://github.com/amperser/proselint) 또는 [`write-good`](https://github.com/btford/write-good)을 실행해보세요. 그걸 여러분의 레포지토리에서 활성화시키고, 안에 오타가 포함된 풀 리퀘스트(pull request; PR)를 보내서 잘 작동하는 지 확인해 보세요.

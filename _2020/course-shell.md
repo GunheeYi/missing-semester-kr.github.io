@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "수업 개요 + 셸(SHELL)"
-date: 2019-01-13
+thumbnail: /static/assets/thumbnails/2020/lec1.png
+date: 2020-01-13
 ready: true
 video:
   aspect: 56.25

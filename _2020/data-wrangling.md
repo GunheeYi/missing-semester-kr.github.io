@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "Data Wrangling"
-date: 2019-01-16
+thumbnail: /static/assets/thumbnails/2020/lec4.png
+date: 2020-01-16
 ready: true
 video:
   aspect: 56.25
@@ -98,7 +99,7 @@ perl -pe 's/.*?Disconnected from //'
  | sed -E 's/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/'
 ```
 
-아마 여러분은 _정말로_ 복잡한 정규 표현식을 마주하게 되는 상상을 할 수 있을 것입니다. 예를 들어, 정규 표현식으로 [e-mail 주소](https://www.regular-expressions.info/email.html)를 일치시키는 방법은 이와 같습니다. [정말 어렵지요](https://emailregex.com/). 이에 대해 [많은 논의들이 있습니다](https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression/1917982). 그리고 사람들은 이를 위한 [테스트](https://fightingforalostcause.net/content/misc/2006/compare-email-regex.php)를 작성하기도 하였습니다. [테스트 행렬도요](https://mathiasbynens.be/demo/url-regex). 여러분은 주어진 숫자가 [소수인지](https://www.noulakaz.net/2007/03/18/a-regular-expression-to-check-for-prime-numbers/). 확인하는 정규식을 작성할 수도 있습니다.
+아마 여러분은 _정말로_ 복잡한 정규 표현식을 마주하게 되는 상상을 할 수 있을 것입니다. 예를 들어, 정규 표현식으로 [e-mail 주소](https://www.regular-expressions.info/email.html)를 일치시키는 방법은 이와 같습니다. [정말 어렵지요](https://web.archive.org/web/20221223174323/http://emailregex.com/). 이에 대해 [많은 논의들이 있습니다](https://stackoverflow.com/questions/201323/how-to-validate-an-email-address-using-a-regular-expression/1917982). 그리고 사람들은 이를 위한 [테스트](https://fightingforalostcause.net/content/misc/2006/compare-email-regex.php)를 작성하기도 하였습니다. [테스트 행렬도요](https://mathiasbynens.be/demo/url-regex). 여러분은 주어진 숫자가 [소수인지](https://www.noulakaz.net/2007/03/18/a-regular-expression-to-check-for-prime-numbers/). 확인하는 정규식을 작성할 수도 있습니다.
 
 정규 표현식은 사용하기 어렵기로 악명이 높지만, 그만큼 굉장히 편리한 도구이므로, 여러분의 도구 상자에 넣어 사용할 만한 충분한 가치가 있습니다.
 
@@ -176,7 +177,7 @@ $1 == 1 && $2 ~ /^c[^ ]*e$/ { rows += $1 }
 END { print rows }
 ```
 
-`BEGIN`은 입력의 시작과 일치하는 패턴입니다(그리고 `END`는 끝과 일치합니다). 이제 블럭은 행마다 첫 번째 필드의 숫자를 세어서(비록 이 경우에는 언제나 1이겠지만요) 마지막에 출력합니다. 사실, 우리는 `grep`과 `sed`를 완전히 _제거할 수_ 있는데, 왜냐하면, `awk`는 [이 모든 것을 다 할 수 있기 때문입니다](https://backreference.org/2010/02/10/idiomatic-awk/). 이에 대해선 독자의 연습문제로 남겨놓도록 하겠습니다.
+`BEGIN`은 입력의 시작과 일치하는 패턴입니다(그리고 `END`는 끝과 일치합니다). 이제 블럭은 행마다 첫 번째 필드의 숫자를 세어서(비록 이 경우에는 언제나 1이겠지만요) 마지막에 출력합니다. 사실, 우리는 `grep`과 `sed`를 완전히 _제거할 수_ 있는데, 왜냐하면, `awk`는 [이 모든 것을 다 할 수 있기 때문입니다](https://web.archive.org/web/20251210045942/https://backreference.org/2010/02/10/idiomatic-awk/). 이에 대해선 독자의 연습문제로 남겨놓도록 하겠습니다.
 
 ## 데이터 분석하기
 
@@ -258,4 +259,4 @@ and
 Previous shutdown cause: 5
 ```
 5. 이전 세 번의 재부팅 간에 공유되지 _않은_ 부팅 메세지를 찾아보세요(`journalctl`의 `-b` 플래그를 참조하세요). 이 작업을 여러 단계로 나눕니다. 먼저, 지난 세 번의 부팅에₩서 나온 로그만 얻을 수 있는 방법을 찾아보세요. 여러분이 부팅 로그를 추출하는데 사용하는 도구에 적용 가능한 플래그를 적용하거나, `sed '0,/STRING/d'`를 사용하여 `STRING`과 일치하는 모든 행을 지우는 방법을 적용할 수 있을 것입니다. 다음으로, (타임스탬프와 같이) _항상_ 달라지는 행의 모든 부분을 제거하세요. 그런 다음, 각 입력 행의 중복의 정도를 세면서, 행의 중복을 제거합니다(`uniq`는 여러분의 친구라는 점을 잊지 마세요). 마지막으로, 중복의 수가 3 이상인 모든 행을 제거합니다(왜냐하면 이는 모든 부팅에서 _공유되었음을_ 의미하기 떄문입니다).
-6. [이것이나](https://stats.wikimedia.org/EN/TablesWikipediaZZ.htm) [요것](https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/tables/table-1), 아니면 [여기에 있는 데이터](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)와 같은 온라인 데이터 셋을 찾아보세요. `curl`을 사용하여 데이터를 가져와(fetch) 두 개의 숫자 데이터 열만 추출합니다. 만약 여러분이 HTML 데이터를 가져오는 경우, [`pup`](https://github.com/EricChiang/pup)이 아마 도움이 될 것입니다. JSON 데이터인 경우, [`jq`](https://stedolan.github.io/jq/)를 사용해보세요. 단일 명령으로 하나의 열의 최소값과 최대값을 찾고, 다른 명령으로 두 열 사이의 차이의 합을 구해보세요.
+6. [이것이나](https://commons.wikimedia.org/wiki/Data:Wikipedia_statistics/data.tab) [요것](https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/tables/table-1), 아니면 [여기에 있는 데이터](https://www.springboard.com/blog/data-science/free-public-data-sets-data-science-project/)와 같은 온라인 데이터 셋을 찾아보세요. `curl`을 사용하여 데이터를 가져와(fetch) 두 개의 숫자 데이터 열만 추출합니다. 만약 여러분이 HTML 데이터를 가져오는 경우, [`pup`](https://github.com/EricChiang/pup)이 아마 도움이 될 것입니다. JSON 데이터인 경우, [`jq`](https://stedolan.github.io/jq/)를 사용해보세요. 단일 명령으로 하나의 열의 최소값과 최대값을 찾고, 다른 명령으로 두 열 사이의 차이의 합을 구해보세요.

@@ -1,7 +1,8 @@
 ---
 layout: lecture
 title: "셸 툴과 스크립팅"
-date: 2019-01-14
+thumbnail: /static/assets/thumbnails/2020/lec2.png
+date: 2020-01-14
 ready: true
 video:
   aspect: 56.25
@@ -35,7 +36,7 @@ mcd () {
 }
 ```
 
-`$1`은 script/function의 첫 번째 인자입니다. 다른 스크립팅 언어와 달리, bash는 인수, 오류 코드 및 기타 관련 변수를 참조하기 위해 다양한 특수 변수를 사용합니다. 아래에 그중 일부를 적어놨습니다. 더 포괄적인 목록은 [여기](https://www.tldp.org/LDP/abs/html/special-chars.html)서 찾을 수 있습니다.
+`$1`은 script/function의 첫 번째 인자입니다. 다른 스크립팅 언어와 달리, bash는 인수, 오류 코드 및 기타 관련 변수를 참조하기 위해 다양한 특수 변수를 사용합니다. 아래에 그중 일부를 적어놨습니다. 더 포괄적인 목록은 [여기](https://tldp.org/LDP/abs/html/special-chars.html)서 찾을 수 있습니다.
 
 - `$0` - 스크립트 이름
 - `$1` ~ `$9` - 스크립트의 인자들. `$1`부터 첫번쨰 인자입니다.
@@ -93,7 +94,7 @@ for file in $@; do
 done
 ```
 
-비교에서 우리는`$?`와 0이 같지 않은지 테스트했습니다. Bash는 이런 종류의 많은 비교를 구현합니다. manpage에서 [test](https://www.man7.org/linux/man-pages/man1/test.1.html) 에 대한 자세한 목록을 찾을 수 있습니다. bash에서 비교를 수행할 때는 간단한 대괄호`[]`대신 이중 대괄호`[[]]`를 사용하십시오. 'sh'로 이식할 수는 없지만 실수할 가능성은 낮습니다. 자세한 설명은 [여기](http://mywiki.wooledge.org/BashFAQ/031)서 확인할 수 있습니다. 
+비교에서 우리는`$?`와 0이 같지 않은지 테스트했습니다. Bash는 이런 종류의 많은 비교를 구현합니다. manpage에서 [test](https://www.man7.org/linux/man-pages/man1/test.1.html) 에 대한 자세한 목록을 찾을 수 있습니다. bash에서 비교를 수행할 때는 간단한 대괄호`[]`대신 이중 대괄호`[[]]`를 사용하십시오. 'sh'로 이식할 수는 없지만 실수할 가능성은 낮습니다. 자세한 설명은 [여기](https://mywiki.wooledge.org/BashFAQ/031)서 확인할 수 있습니다. 
 
 스크립트를 시작할 때 유사한 인수를 제공해야 하는 경우가 종종 있을 것입니다. Bash에는 이런 상황에서 파일 이름을 확장하여 명령을 보다 쉽게 확장할 수 있는 방법을 제공합니다. 이러한 기술 중 하나가 쉘 _globbing_ 입니다.
 - Wildcards - 일종의 와일드 카드 일치를 수행 할 때마다 `?` 및 `*` 를 사용하여 각각 하나 또는 원하는 양의 문자를 일치시킬 수 있습니다. 예를 들어 `foo`, `foo1`, `foo2`, `foo10` 및 `bar` 파일이 있을 때, `rm foo?` 명령어를 치면, `foo1` 과 `foo2` 를 삭제하는 반면에 `rm foo *` 는 `bar`를 뺀 모든 파일을 삭제합니다. 
@@ -155,7 +156,7 @@ for arg in reversed(sys.argv[1:]):
 
 쉘 강의에서 보았듯이 1차 접근 방식은`-h` 또는 `--help` 플래그를 사용하여 해당 명령들을 찾아보는 것입니다. 혹은, 더 자세한 정보를 알기 위해 `man` 명령을 사용할 수 있습니다. manual의 줄임말인 [man](https://www.man7.org/linux/man-pages/man1/man.1.html)은 사용자가 지정한 명령에 대한 매뉴얼 페이지 (manpage라고 함)를 제공합니다. 예를 들어 `man rm`은 앞서 보여 준 `-i` 플래그를 포함하여 사용할 수 있는 모든 플래그와 함께 `rm` 명령의 동작을 출력합니다. 사실 지금까지의 모든 명령어에 대해 링크는 명령에 대한 Linux 매뉴얼 페이지의 온라인 버전입니다. 기본이 아닌 명령도 개발자가 작성하여 설치 프로세스의 일부로 포함하면 매뉴얼 페이지 항목이 있습니다. ncurses 기반 도구와 같은 대화형 도구의 경우, 프로그램 내에서 `: help` 명령을 사용하거나 `?` 를 입력하여 도움말에 액세스 할 수 있습니다.
 
-때때로 man 페이지는 명령에 대한 지나치게 자세한 설명을 제공하여 일반적인 사용 사례에 사용할 플래그 / 구문을 해독하기 어렵게 만듭니다. [TLDR 페이지](https://tldr.sh/)는 사용할 옵션을 신속하게 파악할 수 있도록 명령의 사용 사례를 제공하는 데 초점을 맞춘 멋진 보완 솔루션입니다. 예를 들어, 저의 경우 [tar](https://tldr.ostera.io/tar) 및 [ffmpeg](https://tldr.ostera.io/ffmpeg)에 대한 tldr 페이지를 메뉴얼 페이지보다 더 자주 참조합니다. 
+때때로 man 페이지는 명령에 대한 지나치게 자세한 설명을 제공하여 일반적인 사용 사례에 사용할 플래그 / 구문을 해독하기 어렵게 만듭니다. [TLDR 페이지](https://tldr.sh/)는 사용할 옵션을 신속하게 파악할 수 있도록 명령의 사용 사례를 제공하는 데 초점을 맞춘 멋진 보완 솔루션입니다. 예를 들어, 저의 경우 [tar](https://tldr.inbrowser.app/pages/common/tar) 및 [ffmpeg](https://tldr.inbrowser.app/pages/common/ffmpeg)에 대한 tldr 페이지를 메뉴얼 페이지보다 더 자주 참조합니다. 
 
 ## 파일 찾기
 
@@ -190,7 +191,7 @@ find . -name '*.png' -exec convert {} {.}.jpg \;
 
 지금은 `grep`에 매우 다양한 도구를 제공하는 많은 플래그가 있음을 알고 있습니다. 제가 자주 사용하는 것들은 일치하는 줄 주위에 **C**ontext를 가져 오기 위해 `-C` 옵션을 사용하고, 일치하는 줄을 **V**erting하는 데 사용하기 위한 `-v`입니다. 즉, 일치하지 **않는** 모든 줄을 출력합니다. 예를 들어, `grep -C 5`는 일치하는 전 후 다섯 줄을 출력해줍니다. 많은 파일을 빠르게 검색할 때 `-R`을 사용하는 것이 좋습니다. 이는 **R**ecursively 하게 디렉토리로 이동하여 일치하는 문자열에 대한 파일을 검색하기 때문입니다.
  
-그러나`grep -R`은 다중 CPU 지원, & c를 사용하여`.git` 폴더를 무시하는 등 여러가지 방법으로 개선할 수 있습니다. [ack](https://beyondgrep.com/), [ag](https://github.com/ggreer/the_silver_searcher) 및 [rg](https://github.com/BurntSushi/ripgrep)를 포함한 많은 것들이 `grep`의 대안으로 개발되었습니다. `grep`의 대안으로 나온 저 모든 것들은 환상적이며 거의 동일한 기능을 제공합니다. 지금은 얼마나 빠르고 직관적인지를 고려할 때 ripgrep(`rg`)를 사용하고 있습니다. 몇 가지 예 :
+그러나`grep -R`은 다중 CPU 지원, & c를 사용하여`.git` 폴더를 무시하는 등 여러가지 방법으로 개선할 수 있습니다. [ack](https://github.com/beyondgrep/ack3), [ag](https://github.com/ggreer/the_silver_searcher) 및 [rg](https://github.com/BurntSushi/ripgrep)를 포함한 많은 것들이 `grep`의 대안으로 개발되었습니다. `grep`의 대안으로 나온 저 모든 것들은 환상적이며 거의 동일한 기능을 제공합니다. 지금은 얼마나 빠르고 직관적인지를 고려할 때 ripgrep(`rg`)를 사용하고 있습니다. 몇 가지 예 :
 
 ```bash
 # Find all python files where I used the requests library
@@ -222,7 +223,7 @@ rg --stats PATTERN
 지금까지 이러한 작업을 수행하기 위해 필요한 위치에 이미 있다고 가정했습니다. 그러나 디렉토리를 빠르게 탐색하는 방법은 무엇입니까?
 쉘 별칭을 작성하거나 [ln -s](https://www.man7.org/linux/man-pages/man1/ln.1.html)를 사용하여 심볼릭 링크를 만드는 등 이를 수행할 수 있는 간단한 방법이 많이 있습니다. 하지만 개발자들은 이미 매우 영리하고 정교한 솔루션을 만들어놓았습니다.
 
-이 과정의 주제와 마찬가지로, 당신은 종종 일반적인 경우를 최적화하고자 할 것입니다. [fasd](https://github.com/clvv/fasd) 및 [autojump](https://github.com/wting/)와 같은 도구를 통해 자주 and / or 최근 파일과 디렉토리를 찾을 수 있습니다. Fasd는 [_frecency_](https://developer.mozilla.org/en/The_Places_frecency_algorithm), 즉 _frequency_ 및 _recency_ 별로 파일 및 디렉토리의 순위를 매 깁니다.
+이 과정의 주제와 마찬가지로, 당신은 종종 일반적인 경우를 최적화하고자 할 것입니다. [fasd](https://github.com/clvv/fasd) 및 [autojump](https://github.com/wting/)와 같은 도구를 통해 자주 and / or 최근 파일과 디렉토리를 찾을 수 있습니다. Fasd는 [_frecency_](https://web.archive.org/web/20210421120120/https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm), 즉 _frequency_ 및 _recency_ 별로 파일 및 디렉토리의 순위를 매 깁니다.
 기본적으로 `fasd` 는 _frecent_ 디렉토리의 하위 문자열을 사용하여 빠르게`cd`하는 데 사용할 수있는 `z` 명령을 추가합니다. 예를 들어`/ home / user / files / cool_project`로 자주 이동하는 경우 `z cool` 을 사용하여 바로 이동할 수 있습니다. autojump를 사용하면 `j cool` 을 사용하여 동일한 디렉토리 변경을 수행할 수 있습니다.
 
 [tree](https://linux.die.net/man/1/tree), [broot](https://github.com/Canop/broot) 또는 [nnn](https://github.com/jarun/nnn) 또는 [ranger](https://github.com/ranger/ranger)와 같은 본격적인 파일 관리자 디렉토리 구조에 대한 개요를 신속하게 파악하기위한 더 복잡한 도구도 존재합니다. 
