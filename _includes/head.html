@@ -45,6 +45,8 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+  {% comment %}
+  한국어 웹사이트는 방문 정보를 수집하지 않아 Analytics를 비활성화합니다.
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.tracking_id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -53,5 +55,6 @@
 
     gtag('config', '{{ site.analytics.tracking_id }}');
   </script>
+  {% endcomment %}
 
 </head>
