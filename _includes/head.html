@@ -28,9 +28,12 @@
   <meta property="og:title" content="{{ title }}">
 
   {% if page.thumbnail %}
-    <meta name="twitter:image:src" content="{{ page.thumbnail | prepend: site.url }}">
-    <meta property="og:image" content="{{ page.thumbnail | prepend: site.url }}">
+    {% assign thumbnail = page.thumbnail %}
+  {% else %}
+    {% assign thumbnail = site.thumbnail %}
   {% endif %}
+  <meta name="twitter:image" content="{{ thumbnail | prepend: site.url }}">
+  <meta property="og:image" content="{{ thumbnail | prepend: site.url }}">
 
   <title>
     {% if page.title %}
