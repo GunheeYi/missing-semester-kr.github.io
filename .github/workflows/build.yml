@@ -14,6 +14,11 @@ jobs:
         with:
           ruby-version: "3.4"
           bundler-cache: true
+      - name: Check translation status
+        uses: jackchuka/mdschema@d083222d579160effe494c807a329cc40bf7f182 # v0.15.5
+        with:
+          files: '"_2019/**/*.md" "_2020/**/*.md" "_2026/**/*.md"'
+          schema: .github/translation-schema.yml
       - run: bundle exec jekyll build
       - name: Check HTML and internal links
         uses: anishathalye/proof-html@v2
