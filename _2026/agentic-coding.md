@@ -9,6 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: sTdz6PZoAnw
+translation_status: source
 ---
 
 Coding agents are conversational AI models with access to tools such as reading/writing files, web search, and invoking shell commands. They live either in the IDE or in standalone command-line or GUI tools. Coding agents are highly autonomous and powerful tools, enabling a wide variety of use cases.

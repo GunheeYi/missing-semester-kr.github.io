@@ -5,6 +5,7 @@ description: >
   Lecture notes and videos for Missing Semester, MIT IAP 2026.
 permalink: /2026/
 phony: true
+translation_status: source
 ---
 
 <ul class="double-spaced">

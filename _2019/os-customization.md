@@ -8,6 +8,7 @@ video:
   aspect: 62.5
   id: epSRVqQzeDo
 special: true
+translation_status: source
 ---
 
 There is a lot you can do to customize your operating system beyond what is

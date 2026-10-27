@@ -9,6 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: MSgoeuMqUmU
+translation_status: source
 ---
 
 # Who are we?

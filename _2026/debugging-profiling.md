@@ -10,6 +10,7 @@ panopto: "https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a72c48e3-5
 video:
   aspect: 56.25
   id: 8VYT9TcUmKs
+translation_status: source
 ---
 
 A golden rule in programming is that code does not do what you expect it to do, but what you tell it to do. Bridging that gap can sometimes be a quite difficult feat. In this lecture we are going to cover useful techniques for dealing with buggy and resource hungry code: debugging and profiling.

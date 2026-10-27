@@ -8,6 +8,7 @@ ready: true
 video:
     aspect: 56.25
     id: _Ms1Z4xfqv4
+translation_status: complete
 ---
 
 우리가 메타프로그래밍(metaprogramming)이라고 할 때, 이 용어는 무얼 뜻하는 것일까요?  

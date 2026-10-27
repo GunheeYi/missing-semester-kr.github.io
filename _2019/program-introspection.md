@@ -7,6 +7,7 @@ order: 1
 video:
   aspect: 62.5
   id: 74MhV-7hYzg
+translation_status: source
 ---
 
 # Debugging

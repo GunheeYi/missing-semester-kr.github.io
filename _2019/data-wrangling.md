@@ -7,6 +7,7 @@ order: 2
 video:
   aspect: 56.25
   id: VW2jn9Okjhw
+translation_status: source
 ---
 
 Have you ever had a bunch of text and wanted to do something with it?

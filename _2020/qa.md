@@ -7,6 +7,7 @@ ready: true
 video:
     aspect: 56.25
     id: Wz50FvGG6xU
+translation_status: complete
 ---
 
 마지막 강의에선, 학생들이 등록한 질문을 답변했습니다:

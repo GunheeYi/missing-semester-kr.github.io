@@ -9,6 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: 2DOEATfXT8k
+translation_status: source
 ---
 
 Being a good software engineer isn't just about writing code that

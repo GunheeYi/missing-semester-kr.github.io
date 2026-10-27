@@ -9,6 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: XBiLUNx84CQ
+translation_status: source
 ---
 
 There are a variety of tools and techniques that support developers in writing high-quality code. In this lecture, we'll cover:

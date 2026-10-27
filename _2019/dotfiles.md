@@ -7,6 +7,7 @@ order: 1
 video:
   aspect: 62.5
   id: YSZBWWJw3mI
+translation_status: source
 ---
 
 Many programs are configured using plain-text files known as "dotfiles"

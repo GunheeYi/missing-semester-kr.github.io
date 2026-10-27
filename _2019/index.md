@@ -5,6 +5,7 @@ description: >
   Lecture notes and videos for Missing Semester, MIT IAP 2019.
 permalink: /2019/
 phony: true
+translation_status: source
 ---
 
 {% assign lecture_date = site['2019'] | group_by: 'date' | sort: 'name' %}
