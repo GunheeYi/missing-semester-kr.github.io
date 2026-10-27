@@ -9,7 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: 9K8lB61dl3Y
-translation_status: source
+translation_status: draft
 ---
 
 Version control systems (VCSs) are tools used to track changes to source code

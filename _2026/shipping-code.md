@@ -9,7 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: KBMiB-8P4Ns
-translation_status: source
+translation_status: draft
 ---
 
 Getting code to work as intended is hard; getting that same code to run on a machine different from your own is often harder.

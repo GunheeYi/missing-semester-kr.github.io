@@ -9,7 +9,7 @@ ready: true
 video:
   aspect: 56.25
   id: ccBGsPedE9Q
-translation_status: source
+translation_status: draft
 ---
 
 As we covered in the previous lecture, most shells are not a mere launcher to start up other programs,
