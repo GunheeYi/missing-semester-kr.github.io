@@ -17,10 +17,7 @@ title: "왜 우리가 이 수업을 가르칠까요?"
 
 이 문제를 해결하기 위해 우리는 효과적인 컴퓨터 과학자와 프로그래머가 되기 위해 중요하다고 생각하는 모든 주제를 다루는 수업을 만들었습니다.
 이 수업은 실제적이고 실용적이며, 여러분이 접하게 될 다양한 상황에서 즉시 적용할 수 있는 툴과 기술에 대한 실습 소개를 제공합니다.
-The latest iteration of this class, with
-substantially revised material, is being run during MIT's "Independent
-Activities Period" in January 2026 — a one-month semester that features shorter
-student-run classes.
+자료를 대폭 개정한 최신 수업은 2026년 1월 MIT의 "독립 활동 기간" 동안 운영되고 있는데, 이는 단축 수업을 위한 한 달짜리 학기입니다.
 수업 자체는 MIT 구성원만 수강할 수 있지만 녹화된 수업 영상과 함께 모든 수업 자료를 대중에게 제공할 예정입니다.
 
 만약 이 내용이 여러분에게 해당하는 것처럼 들린다면, 이 수업이 무엇을 가르칠 것인지에 대한 구체적인 예들이 아래에 나와 있습니다:
@@ -99,26 +96,22 @@ Command-line에서 직접 데이터 및 파일을 빠르고 쉽게 수정, 보�
 데이터에 대한 통계를 더 이상 수동으로 계산하지 않아도 됩니다.
 이제는 스프레드시트에 그래프를 그리지 않아도 됩니다.
 
-## Code quality and continuous integration
+## 코드 품질과 지속적 통합
+{: #code-quality-and-continuous-integration}
 
-How to use autoformatting, linting, testing, and code coverage tools to improve
-code quality. No more ugly code. No more regressions. No more code that works
-on your computer but crashes on everyone else's.
+자동 서식 지정, 린트, 테스트, 코드 커버리지 도구를 사용해 코드 품질을 높이는 방법을 알아봅니다.
+보기 좋지 않은 코드, 회귀 오류, 내 컴퓨터에서는 작동하지만 다른 사람의 컴퓨터에서는 실행되지 않는 코드는 더 이상 없을 겁니다.
 
-## Beyond the code
+## 코드 밖의 일
+{: #beyond-the-code}
 
-How to write great documentation, communicate clearly with open-source
-maintainers, submit actionable issues, and contribute pull requests that get
-merged. No more confused users who can't get started using your software. No
-more ghosting from maintainers.
+좋은 문서를 쓰고, 오픈 소스 유지보수자와 명확하게 소통하고, 조치할 수 있는 이슈를 제출하고, 병합되는 pull request를 만드는 방법을 알아봅니다.
+소프트웨어 사용을 시작하지 못해 혼란스러워하는 사용자도, 유지보수자로부터 답변을 받지 못하는 일도 더 이상 없을 겁니다.
 
 # Conclusion
 
 위의 내용과 더불어 더 많은 내용이 9개의 수업에서 수업 내용과 함께 연습 문제를 포함되어 있습니다.
-If you can't
-wait until January 2026, you can also take a look at the lectures from the
-[previous offering of the course](/2020/), which covers many of the same
-topics.
+2026년 1월까지 기다릴 수 없다면 비슷한 주제를 많이 다루는 [이전 강의](/2020/)를 살펴봐도 좋습니다.
 
 우리는 가상으로든 직접으로든 1월에 당신을 만나기를 희망합니다!
 
