@@ -7,6 +7,7 @@ ready: true
 video:
   aspect: 56.25
   id: e8BO_dYxk5c
+translation_status: complete
 ---
 
 이 강의에서는 shell을 사용할 때 워크플로우를 개선할 수 있는 몇 가지 방법을 살펴볼 것입니다. 

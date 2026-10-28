@@ -7,6 +7,7 @@ ready: true
 video:
   aspect: 56.25
   id: 2sjqTHE0zok
+translation_status: complete
 ---
 
 버전 컨트롤 시스템(VCSs)은 소스코드(또는 기타 파일이나 폴더들의 모음)의 변화를 추적하기 위해 사용되는 도구입니다.

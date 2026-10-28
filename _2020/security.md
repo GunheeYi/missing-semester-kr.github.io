@@ -7,6 +7,8 @@ ready: true
 video:
   aspect: 56.25
   id: tjwobAmnKTo
+special: true
+translation_status: complete
 ---
 
 지난 해의 [security and privacy lecture](/2019/security/)는 컴퓨터 _사용자_ 측면에서 어떻게 더 안전해 질 수 있는가에 초점을 맞췄습니다. 이번에는, Git에서의 Hash 함수 혹은 키 유도 함수의 사용과 SSH 에서의 대칭/비대칭 암호 시스템과 같이 지난 수업에서 다룬 도구를 이해하는데 관련이 있는 보안과 암호학 개념에 초점을 맞출 것입니다.

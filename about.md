@@ -15,10 +15,13 @@ title: "왜 우리가 이 수업을 가르칠까요?"
 
 # 여러분의 CS 교육에서 누락된 학기
 
-이 문제를 해결하기 위해 우리는 효과적인 컴퓨터 과학자와 프로그래머가 되기 위해 중요하다고 생각하는 모든 주제를 다루는 수업을 운영하고 있습니다.
+이 문제를 해결하기 위해 우리는 효과적인 컴퓨터 과학자와 프로그래머가 되기 위해 중요하다고 생각하는 모든 주제를 다루는 수업을 만들었습니다.
 이 수업은 실제적이고 실용적이며, 여러분이 접하게 될 다양한 상황에서 즉시 적용할 수 있는 툴과 기술에 대한 실습 소개를 제공합니다.
-이 수업은 2020년 1월 MIT의 "독립 활동 기간" 동안 운영되고 있는데, 이는 단축 수업을 위한 한 달짜리 학기입니다.
-수업 자체는 MIT 학생들만 수강할 있지만 녹화된 수업 영상과 함께 모든 수업 자료를 대중에게 제공할 예정입니다.
+The latest iteration of this class, with
+substantially revised material, is being run during MIT's "Independent
+Activities Period" in January 2026 — a one-month semester that features shorter
+student-run classes.
+수업 자체는 MIT 구성원만 수강할 수 있지만 녹화된 수업 영상과 함께 모든 수업 자료를 대중에게 제공할 예정입니다.
 
 만약 이 내용이 여러분에게 해당하는 것처럼 들린다면, 이 수업이 무엇을 가르칠 것인지에 대한 구체적인 예들이 아래에 나와 있습니다:
 
@@ -96,26 +99,28 @@ Command-line에서 직접 데이터 및 파일을 빠르고 쉽게 수정, 보�
 데이터에 대한 통계를 더 이상 수동으로 계산하지 않아도 됩니다.
 이제는 스프레드시트에 그래프를 그리지 않아도 됩니다.
 
-## Virtual machines
+## Code quality and continuous integration
 
-가상 머신을 사용하여 새로운 운영 체제를 시도하고, 관련 없는 프로젝트를 분리하며, 주 머신을 깨끗하고 깔끔하게 유지하는 방법에 대해 알아봅니다.
-보안 랩을 수행하는 동안 실수로 컴퓨터를 더 이상 손상시키지 않아도 됩니다.
-버전이 다른 수백만 개의 무작위로 설치된 패키지는 더 이상 필요 없습니다.
+How to use autoformatting, linting, testing, and code coverage tools to improve
+code quality. No more ugly code. No more regressions. No more code that works
+on your computer but crashes on everyone else's.
 
-## Security
+## Beyond the code
 
-여러분의 모든 비밀을 세상에 즉시 드러내지 않고 인터넷에 접속하는 방법에 대해 알아봅니다.
-너무 취약한 자신의 정보과 일치하는 비밀번호를 더 이상 사용하지 않을 겁니다.
-보안되지 않은 개방형 WiFi 네트워크는 더 이상 없을 겁니다.
-암호화되지 않은 메시지는 더 이상 없을 겁니다.
+How to write great documentation, communicate clearly with open-source
+maintainers, submit actionable issues, and contribute pull requests that get
+merged. No more confused users who can't get started using your software. No
+more ghosting from maintainers.
 
 # Conclusion
 
-위의 내용과 더불어 더 많은 내용이 12개의 수업에서 수업 내용과 함께 연습 문제를 포함되어 있습니다.
-1월을 기다릴 수 없다면 지난해 IAP 때 운영했던 [Hacker Tools](https://hacker-tools.github.io/lectures/) 강의를 살펴봐도 좋습니다.
-Hacker Tools는 이 수업의 선구자격로서, 같은 주제를 많이 다루고 있습니다.
+위의 내용과 더불어 더 많은 내용이 9개의 수업에서 수업 내용과 함께 연습 문제를 포함되어 있습니다.
+If you can't
+wait until January 2026, you can also take a look at the lectures from the
+[previous offering of the course](/2020/), which covers many of the same
+topics.
 
 우리는 가상으로든 직접으로든 1월에 당신을 만나기를 희망합니다!
 
 Happy hacking,<br>
-Anish, Jose, 그리고 Jon
+[Anish](https://anish.io/), [Jon](https://thesquareplanet.com/), 그리고 [Jose](https://josejg.com/)

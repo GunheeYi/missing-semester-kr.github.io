@@ -7,6 +7,7 @@ order: 1
 video:
   aspect: 62.5
   id: 1vLcusYSrI4
+translation_status: source
 ---
 
 # Importance of Editors

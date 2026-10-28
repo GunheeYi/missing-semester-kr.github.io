@@ -7,6 +7,7 @@ order: 2
 video:
   aspect: 56.25
   id: LJ9ki5zq6Ik
+translation_status: source
 ---
 
 # Virtual Machines

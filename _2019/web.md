@@ -8,6 +8,7 @@ video:
   aspect: 62.5
   id: XpZO3S8odec
 special: true
+translation_status: source
 ---
 
 Apart from the terminal, the web browser is a tool you will find yourself spending significant amounts of time into. Thus it is worth learning how to use it efficiently and productively.

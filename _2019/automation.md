@@ -8,6 +8,7 @@ video:
   aspect: 56.25
   id: BaLlAaHz-1k
 special: true
+translation_status: source
 ---
 
 Sometimes you write a script that does something but you want for it to run periodically, say a backup task. You can always write an *ad hoc* solution that runs in the background and comes online periodically. However, most UNIX systems come with the cron daemon which can run task with a frequency up to a minute based on simple rules.

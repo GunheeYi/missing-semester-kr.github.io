@@ -7,6 +7,7 @@ order: 1
 video:
   aspect: 56.25
   id: qw2c6ffSVOM
+translation_status: source
 ---
 
 # Motivation

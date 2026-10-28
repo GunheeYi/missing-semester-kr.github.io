@@ -7,6 +7,7 @@ ready: true
 video:
   aspect: 56.25
   id: Z56Jmr9Z34Q
+translation_status: complete
 ---
 
 # 이 수업에 관하여

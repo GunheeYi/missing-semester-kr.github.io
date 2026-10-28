@@ -6,7 +6,7 @@ permalink: /license/
 
 # License
 
-All the content in this course, including the website source code, lecture notes, exercises, and lecture videos is licensed under Attribution-NonCommercial-ShareAlike 4.0 International [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All the content in this course, including the website source code, lecture notes, exercises, and lecture videos is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 This means that you are free to:
 - **Share** — copy and redistribute the material in any medium or format
@@ -22,7 +22,7 @@ This is a human-readable summary of (and not a substitute for) the [license](htt
 
 ## Contribution guidelines
 
-You can submit corrections and suggestions to the course material by submitting issues and pull requests on our GitHub [repo](https://github.com/missing-semester/missing-semester). This includes the captions for the video lectures which are also in the repo (see [here](https://github.com/missing-semester/missing-semester/tree/master/static/files/subtitles/2020)).
+You can submit corrections and suggestions to the course material by submitting issues and pull requests on our GitHub [repo](https://github.com/missing-semester-kr/missing-semester-kr.github.io). This includes the captions for the video lectures which are also in the repo (see [here](https://github.com/missing-semester-kr/missing-semester-kr.github.io/tree/master/static/files/subtitles/2020)).
 
 ## Translation guidelines
 

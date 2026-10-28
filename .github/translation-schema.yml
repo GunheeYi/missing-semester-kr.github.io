@@ -1,0 +1,5 @@
+frontmatter:
+  fields:
+    - name: translation_status
+      type: string
+      enum: [complete, source, draft]

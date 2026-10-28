@@ -7,6 +7,7 @@ order: 3
 video:
   aspect: 56.25
   id: dbDRfmH5uSI
+translation_status: source
 ---
 
 The shell is an efficient, textual interface to your computer.

@@ -7,6 +7,7 @@ order: 2
 video:
   aspect: 56.25
   id: 3fig2Vz8QXs
+translation_status: source
 ---
 
 Whenever you are working on something that changes over time, it's

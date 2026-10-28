@@ -8,6 +8,7 @@ video:
   aspect: 56.25
   id: lrpqYF8tcYQ
 special: true
+translation_status: source
 ---
 
 There are two types of people:

@@ -7,6 +7,7 @@ order: 1
 video:
   aspect: 62.5
   id: i0rf1gpKL1E
+translation_status: source
 ---
 
 ## Aliases & Functions
