@@ -7,6 +7,7 @@ ready: true
 video:
   aspect: 56.25
   id: JZDt-PRq0uo
+special: true
 translation_status: complete
 ---
 
