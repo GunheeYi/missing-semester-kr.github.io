@@ -152,14 +152,16 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-blockquote {
+blockquote,
+.translation-notice {
   padding: 0.75rem 1rem;
   margin: 1rem 0;
   background-color: rgba(36, 0, 140, 0.05);
   border-left: 3px solid #24008c;
 }
 
-blockquote p:last-child {
+blockquote p:last-child,
+.translation-notice p:last-child {
   margin-bottom: 0;
 }
 
@@ -486,7 +488,8 @@ input[type=checkbox]:checked ~ .menu-label:after {
     border-left: 2px solid #A6E22E;
   }
 
-  blockquote {
+  blockquote,
+  .translation-notice {
     background-color: rgba(166, 226, 46, 0.06);
     border-left-color: #A6E22E;
   }
