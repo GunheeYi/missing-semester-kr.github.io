@@ -8,16 +8,13 @@ subtitle: "2026"
 nositetitle: true
 ---
 
-CS 교과과정은 운영체제에서 기계학습에 이르기까지 CS 내의 고급 주제에 대해 모두 가르쳐 주지만, 거의 다루지 않는 중요한 한 가지 과목이 있으며,
-대신 학생들이 스스로 알아내야 하는 툴의 숙련도가 있습니다. 이 수업에서 우리는 여러분에게 command line을 마스터하는 방법, 강력한 text editor 사용,
-version control system의 화려한 기능 사용 방법 등을 가르쳐 줄 것입니다!
+우리는 CS(컴퓨터과학) 교과과정을 들으며 운영체제에서 기계학습에 이르기까지 많은 고급 내용을 배울 수 있지만, 동시에 중요하지만 거의 다루지 못하고 넘어가는 주제들도 존재합니다: 명령줄을 마스터하는 방법, 강력한 텍스트 편집기의 사용법, 버전 관리 시스템의 화려한 기능 등이 그 예시입니다. 흔히 학생들이 스스로 깨우칠 수밖에 없게 되는 이러한 주제들을 저희는 이 수업에서 가르쳐드릴 것입니다.
 
-학생들은 교육 과정 동안 이러한 툴을 사용하여 수백 시간을 보내므로, 가능한 한 유연하고 마찰이 없는 경험을 하는 것이 이치에 맞습니다.
-이러한 툴들을 마스터하게 되면 자유자재로 툴을 알맞게 사용하는 방법을 알아가는 시간을 덜 쓸 수 있을 뿐만 아니라 이전에 불가능할 정도로 복잡해 보였던 문제들을 해결할 수 있습니다.
+학생들은 교육 과정 속에서 앞서 말한 도구들을 수백 시간 (그리고 이어 일터에서 수천 시간) 사용합니다. 그러니 도구를 가능한 한 최대한 능숙하게 다룰 수 있어야 할 겁니다. 이러한 도구들을 마스터하게 되면, 그것을 여러분의 의도에 맞게 사용하는 방법을 알아내기 위해 시간을 더 쓸 필요가 없어질뿐더러, 이전에는 불가능할 정도로 복잡해보이던 문제를 해결할 수 있을 것입니다.
 
-최근에는 AI를 활용하거나 AI로 기능을 강화한 도구와 작업 방식이 도입되면서 소프트웨어 공학의 여러 측면도 달라지고 있습니다. 이러한 도구는 한계를 이해하고 적절히 사용하면 컴퓨터 과학 분야에서 일하는 사람들에게 큰 도움이 될 수 있으므로, 실제로 활용할 수 있을 만큼 익혀 둘 가치가 있습니다. AI는 여러 분야의 작업을 돕는 기술이므로 별도 AI 강의를 두지 않고, 각 강의에 해당하는 최신 AI 도구와 기법을 직접 포함했습니다.
+최근에는 AI를 활용하거나 AI로 기능을 강화한 도구와 작업 방식이 도입되면서 소프트웨어 공학을 다방면으로 바꾸고 있습니다. 이러한 도구의 한계를 이해하고 그것을 적절히 사용한다면 컴퓨터과학 분야에서 일하는 사람들에게는 큰 도움이 될 수 있으므로, 실제로 활용할 수 있을 만큼 익혀 둘 가치가 있습니다. AI는 여러 분야를 융합적으로 돕는 기술이기에, AI 강의를 별도로 두는 대신에 주제별로 적용 가능한 최신 AI 도구와 기법을 각 강의에 직접 포함했습니다.
 
-이 [수업의 동기](/about/)에 대해 읽어보세요.
+[이 수업의 동기](/about/)에 대해 읽어보세요.
 
 {% comment %}
 # Registration
@@ -49,10 +46,10 @@ Sign up for the IAP 2026 class by filling out this [registration form](https://f
 {% endfor %}
 </ul>
 
-## 이전 강의에서 다룬 특별 주제
+## 이전 연도에서 다룬 특별 주제
 {: #special-topics-from-previous-years}
 
-해마다 다루는 주제가 달라집니다. 지금까지 다룬 모든 주제를 공부하고 싶은 분들을 위해, 이전 강의에서 다뤘지만 2026년에는 다루지 않은 주제를 모았습니다.
+해마다 다루는 주제가 달라집니다. 지금까지 다룬 모든 주제를 공부하고 싶은 분들을 위해, 이전 연도에서 다뤘지만 2026년에는 다루지 않은 주제를 모았습니다.
 
 {% comment %} pop to remove default "posts" collection {% endcomment %}
 {% assign sorted_collections = site.collections | sort: 'label' | pop | reverse %}
@@ -85,13 +82,13 @@ same topics.
 {: #general-information}
 
 **강사진**: 이 수업은 [Anish](https://anish.io/), [Jon](https://thesquareplanet.com/), 그리고 [Jose](https://josejg.com/)가 함께 가르칩니다.<br>
-**질문**: [missing-semester@mit.edu](mailto:missing-semester@mit.edu)로 Email을 보내주시면 됩니다.<br>
+**질문**: [missing-semester@mit.edu](mailto:missing-semester@mit.edu)로 email을 보내주시면 됩니다.<br>
 **토론**: [OSSU Discord](https://ossu.dev/#community)를 이용하세요. `#missing-semester-forum`은 Piazza처럼 사용하고, `#missing-semester`에서는 수강생 및 강사와 대화할 수 있습니다.
 
 # MIT 밖으로
 {: #beyond-mit}
 
-또한 우리는 다른 이들이 이런 자료로부터 이익을 얻을 수 있기 바라면서 MIT를 뿐만 아니라 외부와 이 수업을 공유해 왔습니다. 이 수업에 대한 게시물과 토론은 아래와 같습니다:
+더 많은 사람이 이 자료를 활용할 수 있도록 MIT 밖에도 수업을 공개했습니다. 아래에서 관련 글과 토론을 볼 수 있습니다.
 
  - Hacker News ([2026](https://news.ycombinator.com/item?id=47124171), [2020](https://news.ycombinator.com/item?id=22226380), [2019](https://news.ycombinator.com/item?id=19078281))
  - Lobsters ([2026](https://lobste.rs/s/q4ykw7/missing_semester_your_cs_education_2026), [2020](https://lobste.rs/s/ti1k98/missing_semester_your_cs_education_mit), [2019](https://lobste.rs/s/h6157x/mit_hacker_tools_lecture_series_on))
@@ -129,23 +126,23 @@ same topics.
 - [튀르키예어](https://missing-semester-tr.github.io/)
 - [베트남어](https://missing-semester-vn.github.io/)
 
-참고: 이 링크들은 커뮤니티 번역 사이트로 연결되는 외부 링크입니다. 이 번역들은 검증하지 않았습니다.
+참고: 커뮤니티 번역본 사이트로 연결되는 외부 링크들입니다. 이 번역들은 검증하지 않았습니다.
 
 이 수업의 강의 노트를 번역하셨나요? 목록에 추가할 수 있도록 [pull request](https://github.com/missing-semester/missing-semester/pulls)를 보내 주세요!
 
-## 감사의 말
+# 감사의 말
 {: #acknowledgments}
 
 {% comment %}
 2026 acks; previous years' acks are on their respective pages
 {% endcomment %}
 
-이 수업의 비디오를 녹화할 수 있게 도와준 Elaine Mello와 [MIT Open Learning](https://openlearning.mit.edu/)에 감사드립니다. 이 수업을 [SIPB IAP 2026](https://sipb.mit.edu/iap/)의 일부로 지원한 Luis Turino와 [SIPB](https://sipb.mit.edu/)에도 감사드립니다.
+강의 영상 녹화를 도와준 Elaine Mello와 [MIT Open Learning](https://openlearning.mit.edu/)에 감사드립니다. 이 수업을 [SIPB IAP 2026](https://sipb.mit.edu/iap/)의 일부로 지원한 Luis Turino와 [SIPB](https://sipb.mit.edu/)에도 감사드립니다.
 
 ---
 
 <div class="small center">
 <p><a href="https://github.com/missing-semester-kr/missing-semester-kr.github.io">원본 코드</a>.</p>
-<p>CC BY-NC-SA에 따라 라이센스를 부여합니다</p>
+<p>CC BY-NC-SA에 따라 라이센스를 부여합니다.</p>
 <p>기여 &amp; 번역 지침은 <a href="/license/">여기</a>를 참조하세요.</p>
 </div>

@@ -5,7 +5,7 @@ description: >
   MIT IAP 2026 Missing Semester의 강의 노트와 영상입니다.
 permalink: /2026/
 phony: true
-translation_status: draft
+translation_status: complete
 ---
 
 <ul class="double-spaced">
